@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">CoinMarketCap</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Cryptocurrencies <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Exchanges</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Community</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Learn</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+  
+    <div class="row mt-4">
+        <div class="col-12">
+            <h3>Today's Cryptocurrency Prices by Market Cap</h3>
+            <p>The global crypto market cap is $2.39T, a <span class="text-danger">3.30%</span> decrease over the last day.</p>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+          <div class="card mb-4">
+              <div class="card-body">
+                  <h5 class="card-title">Most Visited</h5>
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">1. Bitcoin <span class="badge badge-danger">4.21%</span></li>
+                      <li class="list-group-item">2. Solidus Ai Tech <span class="badge badge-danger">1.90%</span></li>
+                      <li class="list-group-item">3. Argent <span class="badge badge-danger">25.71%</span></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Top Community Post</h5>
+                <p>US ETF 29 JUL: $124M to BTC and $98M to ETH</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4">
+          <div class="card-body">
+              <h5 class="card-title">Fear & Greed Index</h5>
+              <div id="fearGreedIndex" style="height: 150px;"></div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+      <table class="table table-striped">
+          <thead>
+              <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>1h %</th>
+                  <th>24h %</th>
+                  <th>7d %</th>
+                  <th>Market Cap</th>
+                  <th>Volume(24h)</th>
+                  <th>Circulating Supply</th>
+                  <th>Last 7 Days</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>Bitcoin BTC</td>
+                  <td>$66,531.24</td>
+                  <td class="text-danger">0.49%</td>
+                  <td class="text-danger">4.15%</td>
+                  <td class="text-danger">0.61%</td>
+                  <td>$1,312,877,685,709</td>
+                  <td>$39,365,003,843</td>
+                  <td>19,733,250 BTC</td>
+                  <td><img src="Bitcoin.png" alt="BTC Chart" class="img-fluid"></td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Ethereum ETH</td>
+                  <td>$3,330.79</td>
+                  <td class="text-danger">0.32%</td>
+                  <td class="text-danger">1.64%</td>
+                  <td class="text-danger">5.49%</td>
+                  <td>$114,436,379,241</td>
+                  <td>$59,787,234,506</td>
+                  <td>120,228,315 ETH</td>
+                  <td><img src="Eth.png" alt="ETH Chart" class="img-fluid"></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Tether</td>
+                <td>$0.9999
+                </td>
+                <td class="text-danger">0.01%</td>
+                <td class="text-danger">0.02%</td>
+                <td class="text-danger">0.04%</td>
+                <td>$400,454,885,581</td>
+                <td>$16,793,313,226</td>
+                <td>120,228,315 ETH</td>
+                <td><img src="tether.png" alt="ETH Chart" class="img-fluid"></td>
+            </tr>
+   
+          </tbody>
+      </table>
+  </div>
+</div>
+</div>
+
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
